@@ -23,11 +23,11 @@ function addMessage(message, sender) {
 function getBotResponse(message) {
     const text = message.toLowerCase();
 
-    if (text.includes("hello") || text.includes("hi")) {
+    if (text.includes("hello") || text.includes("hi") || text.includes("sup")) {
         return "Hey! I'm Nexa.";
     }
 
-    if (text.includes("how are you")) {
+    if (text.includes("how are you") || text.includes("how you doing")) {
         return "I'm doing great! Thanks for asking.";
     }
 
